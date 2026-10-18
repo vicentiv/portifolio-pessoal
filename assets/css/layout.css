@@ -1,0 +1,91 @@
+/* --- Celulares (até 640px) --- */
+@media (min-width: 250px) and (max-width: 640px) {
+  .hero {
+    align-items: flex-start;
+     padding-top: 180px;
+  }
+  
+  .hero .container {
+    padding-top: 0;
+  }
+
+
+  body .hero::before {
+    background: url("../img/card13.webp") no-repeat center/cover;
+    background-size: cover;
+    background-position: center -50px; /* TESTA: 80px, 120px, 160px */
+    
+  }
+  .initialtext{
+    margin-top: 140px;  /* ajusta entre 120~200 */
+  }
+  .experiencia-container {
+    margin-top: 14px;
+  }
+
+  .experiencia-itens h4 {
+    font-size: 1rem;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+  }
+
+  .experiencia-itens img {
+    width: 46px !important;
+    height: 46px !important;
+  }
+
+  .linha-vertical {
+    display: none;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  #presentation2 {
+    font-size: 1.2rem;
+  }
+
+  #presentation,
+  .text {
+    font-size: 0.95rem;
+  }
+
+  #socialsaibamais img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .NormalButton {
+    width: 100%;
+    max-width: 220px;
+  }
+
+  /* se no mobile você quer esconder a foto */
+  #mainphoto {
+    display: none;
+  }
+}
+
+/* --- Tablets (650px até 1024px) --- */
+@media (min-width: 650px) and (max-width: 1024px) {
+  #mainphoto {
+    height: 70%;
+  }
+
+  #saibamais {
+    width: auto;
+    padding: 12px 24px;
+  }
+}
+
+/* --- Ajustes gerais até 1024px --- */
+@media (max-width: 1024px) {
+  #mainphoto {
+    height: 45%;
+    display: flex;
+    align-items: center;
+  }
+}

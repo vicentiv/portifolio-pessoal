@@ -1,0 +1,569 @@
+/* =========================================================
+   RESPONSIVIDADE — preserva o layout original
+   Ajustes focados em telas pequenas, tablets e larguras intermediárias.
+========================================================= */
+
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+img,
+svg,
+video,
+iframe {
+  max-width: 100%;
+}
+
+.container,
+.container-fluid {
+  width: 100%;
+}
+
+/* ==========================
+   NAVBAR — todas as páginas
+========================== */
+@media (max-width: 991.98px) {
+  .navbar > .container-fluid {
+    min-height: 70px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  #logo {
+    height: 72px;
+    width: auto;
+  }
+
+  .navbar-toggler {
+    flex: 0 0 auto;
+    padding: 7px 9px;
+  }
+
+  .navbar-collapse {
+    width: 100%;
+  }
+
+  .navbar-nav {
+    width: 100%;
+    align-items: stretch !important;
+    padding: 8px 0 14px;
+    gap: 2px;
+  }
+
+  .navbar-nav .nav-item {
+    width: 100%;
+    margin-right: 0 !important;
+  }
+
+  .navbutt {
+    display: block;
+    width: 100%;
+    padding: 11px 12px;
+    font-size: 17px;
+  }
+
+  .navbutt::after {
+    left: 12px;
+    right: auto;
+    bottom: 4px;
+    width: 0;
+  }
+
+  .navbutt:hover::after,
+  .navbutt.active::after {
+    width: 42px;
+  }
+}
+
+/* ==========================
+   PÁGINA INICIAL — HERO
+========================== */
+@media (max-width: 1024px) {
+  #hero2 .hero {
+    min-height: calc(100vh - 120px);
+  }
+
+  #hero2 .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 640px) {
+  #hero2 .hero {
+    min-height: calc(100vh - 120px);
+    height: auto;
+    padding: 110px 0 55px;
+    align-items: flex-start;
+  }
+  #hero2 .hero .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  #hero2 .initialtext {
+    margin-top: 250px !important;
+    width: 100%;
+}
+
+  #presentation2 {
+    font-size: 1.15rem;
+  }
+
+  #name,
+  #hero2 h1 {
+    font-size: clamp(2.25rem, 10vw, 3rem);
+    line-height: 1.08;
+    overflow-wrap: anywhere;
+  }
+
+  #presentation {
+    font-size: 1.05rem;
+  }
+
+  #hero2 .text {
+    font-size: .95rem;
+  }
+
+  #hero2 .text br {
+    display: none;
+  }
+
+  .experiencia-container {
+    margin-top: 1.25rem;
+    gap: .7rem;
+  }
+
+  .experiencia-itens {
+    margin-left: 1.25rem;
+    gap: .45rem;
+  }
+
+  .experiencia-itens h4 {
+    font-size: .95rem;
+    line-height: 1.35;
+    margin: 8px 0;
+  }
+
+  .experiencia-itens img {
+    width: 40px !important;
+    height: 40px !important;
+    flex: 0 0 40px;
+  }
+
+  #hero2 .row > div[style] {
+    width: 100%;
+    margin: 18px 0 0 !important;
+  }
+
+  #hero2 .NormalButton {
+    width: auto;
+    min-width: 150px;
+  }
+
+  #mininav {
+    height: 48px;
+    gap: 14px;
+    margin-bottom: 0;
+    align-items: center;
+  }
+
+  #mininav a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #mininav img {
+    width: 34px !important;
+    height: 34px !important;
+  }
+
+  #github {
+    font-size: 32px;
+    margin-top: 0;
+  }
+
+  #linkedin {
+    font-size: 29px;
+    margin-top: 0;
+  }
+}
+
+/* ==========================
+   SEÇÕES DA HOME
+========================== */
+@media (max-width: 767.98px) {
+  .sobre-section,
+  .habilidades-section,
+  .servicos-section {
+    margin-top: 60px;
+  }
+
+  .sobre-section {
+    padding: 20px 16px 30px;
+  }
+
+  .habilidades-section {
+    padding: 55px 16px;
+  }
+
+  .servicos-section {
+    padding: 55px 16px;
+  }
+
+  .section-title {
+    font-size: clamp(1.65rem, 7vw, 2.1rem);
+  }
+
+  .servicos-heading {
+    font-size: clamp(1.8rem, 8vw, 2.3rem);
+  }
+
+  .subtitulo-servicos {
+    line-height: 1.5;
+  }
+
+  .text {
+    font-size: .95rem;
+    line-height: 1.65;
+  }
+
+  .sobre-stats {
+    gap: 1.5rem;
+  }
+
+  .stat-item {
+    min-width: 100px;
+  }
+
+  .stat-item h3 {
+    font-size: 1.9rem;
+  }
+
+  .cards-servicos {
+    gap: 1.2rem;
+  }
+
+  .card-servico {
+    width: 100%;
+    max-width: 340px;
+    flex: 1 1 100%;
+  }
+
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .skill-item {
+    width: 100%;
+    max-width: none;
+    min-width: 0;
+    padding: 18px 8px;
+  }
+
+  .skill-item img {
+    width: 44px;
+    height: 44px;
+  }
+
+  .skill-item span {
+    font-size: .8rem;
+    text-align: center;
+  }
+}
+
+/* ==========================
+   DESIGN — FILTROS E CARDS
+========================== */
+#design-container {
+  width: 100%;
+}
+
+#filters {
+  width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+#filters .FilterButton {
+  white-space: nowrap;
+}
+
+@media (max-width: 575.98px) {
+  #design-container {
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-top: 20px;
+  }
+
+  #design-container h2 {
+    font-size: 1.8rem;
+  }
+
+  #design-container h4 {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  #filters {
+    gap: 8px !important;
+    margin-bottom: 10px !important;
+  }
+
+  #filters .FilterButton {
+    padding: 9px 13px;
+    font-size: .85rem;
+  }
+
+  .designs {
+    padding-top: 25px !important;
+  }
+
+  .designs .container {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .card {
+    padding: 18px 15px;
+  }
+
+  .card .card-img-top {
+    height: 210px;
+  }
+
+  .card-desc {
+    line-height: 1.5;
+  }
+
+  .ButtonCard {
+    max-width: none;
+  }
+
+  .modal-dialog {
+    width: auto;
+    max-width: none;
+    margin: .6rem;
+  }
+
+  .modal-content {
+    width: 100%;
+  }
+
+  #modal1 .gallery-modal {
+    gap: 8px;
+  }
+
+  #modal1 .g-item img {
+    height: 105px;
+  }
+
+  .modal-body {
+    padding: 14px;
+  }
+
+  .modal-header,
+  .modal-footer {
+    padding: 14px;
+  }
+
+  .modal-footer {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .modal-footer > * {
+    max-width: 100%;
+  }
+
+  .ButtonModal {
+    max-width: 100%;
+    white-space: normal;
+  }
+}
+
+/* ==========================
+   DESENVOLVIMENTO WEB
+========================== */
+@media (max-width: 991.98px) {
+  .web-navbar > .container-fluid {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .web-navbar #logo {
+    height: 72px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .web-page {
+    padding: 35px 0 70px;
+  }
+
+  .web-hero {
+    width: 100%;
+    padding: 20px 18px 35px;
+  }
+
+  .web-hero h1 {
+    font-size: clamp(2rem, 10vw, 3rem);
+    line-height: 1.08;
+    overflow-wrap: anywhere;
+  }
+
+  .web-hero h1 br {
+    display: none;
+  }
+
+  .web-hero p {
+    font-size: .94rem;
+    line-height: 1.65;
+    margin-top: 18px;
+  }
+
+  .projects-preview {
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .site-project {
+    margin-bottom: 55px;
+  }
+
+  .project-heading {
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+
+  .project-heading h2 {
+    font-size: clamp(1.35rem, 7vw, 1.8rem);
+  }
+
+  .project-heading p {
+    font-size: .9rem;
+    line-height: 1.5;
+  }
+
+  .project-type {
+    font-size: .72rem;
+    padding: 7px 11px;
+  }
+
+  .site-preview {
+    border-radius: 14px;
+  }
+
+  .browser-bar {
+    height: 43px;
+    padding: 0 10px;
+    gap: 5px;
+  }
+
+  .browser-bar > span {
+    width: 8px;
+    height: 8px;
+  }
+
+  .address-bar {
+    margin-left: 3px;
+    padding: 6px 9px;
+    font-size: .66rem;
+  }
+
+  .browser-bar i {
+    font-size: .72rem;
+  }
+
+  .preview-frame {
+    height: clamp(330px, 105vw, 470px);
+  }
+
+  .preview-overlay {
+    opacity: 1;
+    place-items: end center;
+    padding: 0 12px 14px;
+    background: linear-gradient(180deg, transparent 58%, rgba(4,9,18,.58));
+  }
+
+  .preview-overlay span {
+    font-size: .76rem;
+    padding: 8px 12px;
+  }
+
+  .footer-content {
+    min-height: 90px;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 16px;
+  }
+}
+
+/* ==========================
+   TABLETS — evita espaços e
+   elementos apertados
+========================== */
+@media (min-width: 641px) and (max-width: 1024px) {
+  #hero2 .hero {
+    min-height: 72vh;
+    padding: 50px 0;
+  }
+
+  #hero2 .initialtext {
+    margin-top: 20px !important;
+  }
+
+  .cards-servicos {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .card-servico {
+    max-width: 260px;
+  }
+
+  .skills-grid {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+/* ==========================
+   RODAPÉ — telas muito estreitas
+========================== */
+@media (max-width: 420px) {
+  .footer-contact li {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .footer-brand p {
+    font-size: .88rem;
+  }
+
+  .footer-social {
+    gap: 10px;
+  }
+
+  .footer-social a {
+    width: 38px;
+    height: 38px;
+  }
+
+  .whatsapp-float {
+    right: 14px;
+    bottom: 14px;
+  }
+}

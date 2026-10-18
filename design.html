@@ -1,0 +1,736 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfólio de Design de Jaime Santos — Redes sociais, campanhas, identidade visual e projetos pessoais." />
+    <meta name="theme-color" content="#0f172a" />
+
+    <link rel="icon" type="image/png" href="assets/img/logo.png" />
+    <link rel="apple-touch-icon" href="assets/img/logo.png" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <link rel="stylesheet" href="assets/css/filters.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&amp;display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Portfólio jaime santos</title>
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a href="index.html">
+          <img id="logo" src="assets/img/logo.png" alt="Jaime Santos" />
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="navbutt" href="index.html#hero2">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="navbutt active" aria-current="page" href="design.html">Portifólio</a>
+            </li>
+            <li class="nav-item">
+              <a class="navbutt" href="index.html#sobre">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="navbutt" href="index.html#servicos">Serviços</a>
+            </li>
+            <li class="nav-item">
+              <a class="navbutt" href="index.html#habilidades">Habilidades</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div id="design-container" class="text-center mb-5">
+      <h2 id="TituloSeção">#Designs</h2>
+      <h4>Projetos de design gráfico, Arte digital e Campanhas de conteúdo</h4>
+    </div>
+
+
+    <div
+      id="filters"
+      class="d-flex gap-2 justify-content-center flex-wrap mb-4"
+    >
+
+      <button class="FilterButton active" data-filter="all">Todos</button>
+
+      <button class="FilterButton" data-filter="redes">
+        Redes Sociais
+      </button>
+      <button class="FilterButton" data-filter="campanhas">
+        Campanhas
+      </button>
+      <button class="FilterButton" data-filter="identidade">
+        Identidade Visual
+      </button>
+       <button class="FilterButton" data-filter="designpessoal">
+        Design Pessoal
+      </button>
+    </div>
+
+    <section class="designs py-5">
+      <div class="container">
+        <div class="row g-4 justify-content-center">
+
+          <!-- CARD 1 -->
+          <div class="col-12 col-md-6 col-lg-3 card-item" data-category="redes">
+            <div class="card h-100">
+              <img
+                src="assets/img/designs/ds3.png"
+                class="card-img-top img-fluid"
+                alt="Redes sociais"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">Redes sociais</h5>
+
+                <span class="card-category">Mídias sociais • Design corporativo</span>
+
+                <p class="card-desc">
+                  Artes digitais desenvolvidas para mídias visuais de alto impacto.
+                </p>
+              </div>
+              <!-- Button trigger modal -->
+              <button
+                type="button"
+                class="ButtonCard"
+                data-bs-toggle="modal"
+                data-bs-target="#modal1"
+              >
+                Ver detalhes
+              </button>
+            </div>
+          </div>
+
+          <!-- Modal 1 -->
+          <div
+            class="modal fade"
+            id="modal1"
+            data-bs-backdrop="static"
+            data-bs-keyboard="false"
+            tabindex="-1"
+            aria-labelledby="modal1Label"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content body-modal">
+
+                <!-- HEADER -->
+                <div class="modal-header">
+                  <div>
+                    <h6 class="card-title" id="modal1Label">Redes sociais</h6>
+                    <p class="card-subititle">Mídias sociais • Design corporativo</p>
+                  </div>
+
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+
+                <!-- BODY -->
+                <div class="modal-body">
+                  <p class="modal-text">
+                    Seleção de artes desenvolvidas para publicação em redes sociais,
+                    unindo composição, tipografia de impacto e tratamento de imagem
+                    para gerar identificação imediata com o público.
+                  </p>
+
+                  <article>
+                    <div class="gallery-modal">
+                      <a class="g-item" href="assets/img/designs/ds3.png" target="_blank" rel="noopener">
+                        <img src="assets/img/designs/ds3.png" alt="Preview 1">
+                      </a>
+
+                      <a class="g-item" href="assets/img/designs/ds4.png" target="_blank" rel="noopener">
+                        <img src="assets/img/designs/ds4.png" alt="Preview 2">
+                      </a>
+
+                      <a class="g-item" href="assets/img/designs/ds5.png" target="_blank" rel="noopener">
+                        <img src="assets/img/designs/ds5.png" alt="Preview 3">
+                      </a>
+
+                      <a class="g-item g-wide" href="assets/img/designs/design-tenis-nike.png" target="_blank" rel="noopener">
+                        <img src="assets/img/designs/design-tenis-nike.png" alt="Preview 4">
+                      </a>
+
+                      <a class="g-item" href="assets/img/designs/ds6.png" target="_blank" rel="noopener">
+                        <img src="assets/img/designs/ds6.png" alt="Preview 5">
+                      </a>
+
+                      <a class="g-item" href="assets/img/designs/ds7.png" target="_blank" rel="noopener">
+                        <img src="assets/img/designs/ds7.png" alt="Preview 6">
+                      </a>
+                    </div>
+                  </article>
+                </div>
+
+                <!-- FOOTER -->
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Fechar
+                  </button>
+
+                  <a href="https://wa.me/5513997274013?text=Olá!%20Gostei%20do%20seu%20trabalho%20de%20Redes%20sociais%20e%20quero%20conversar." target="_blank" rel="noopener">
+                    <button type="button" class="ButtonModal">
+                      Quero algo assim
+                    </button>
+                  </a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 2 -->
+          <div
+            class="col-12 col-md-6 col-lg-3 card-item"
+            data-category="campanhas"
+          >
+            <div class="card h-100">
+              <img
+                src="assets/img/designs/ds4.png"
+                class="card-img-top img-fluid"
+                alt="Campanha de Produto Esportivo"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">Campanha de Produto</h5>
+
+                <span class="card-category">Campanha • Design de Produto</span>
+
+                <p class="card-desc">
+                  Arte publicitária para divulgação de equipamento esportivo, com
+                  foco em destacar os diferenciais técnicos do produto.
+                </p>
+              </div>
+              <!-- Button trigger modal -->
+              <button
+                type="button"
+                class="ButtonCard"
+                data-bs-toggle="modal"
+                data-bs-target="#modal2"
+              >
+                Ver detalhes
+              </button>
+            </div>
+          </div>
+
+          <!-- Modal 2 -->
+          <div
+            class="modal fade"
+            id="modal2"
+            data-bs-backdrop="static"
+            data-bs-keyboard="false"
+            tabindex="-1"
+            aria-labelledby="modal2Label"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content body-modal">
+                <div class="modal-header">
+                  <div>
+                    <h6 class="card-title" id="modal2Label">Campanha de Produto</h6>
+                    <p class="card-subititle">Campanha • Design de Produto</p>
+                  </div>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+
+                <div class="modal-body">
+                  <img class="modal-img-single" src="assets/img/designs/ds4.png" alt="Campanha de Produto Esportivo">
+                  <p class="modal-text">
+                    Peça publicitária criada para reforçar o lançamento de um
+                    equipamento esportivo, combinando fotografia de produto,
+                    tipografia forte e blocos de destaque para os principais
+                    diferenciais técnicos.
+                  </p>
+                  <ul class="modal-features">
+                    <li><i class="fa-solid fa-check"></i> Direção de arte</li>
+                    <li><i class="fa-solid fa-check"></i> Composição tipográfica</li>
+                    <li><i class="fa-solid fa-check"></i> Adaptação para redes sociais</li>
+                  </ul>
+                </div>
+
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Fechar
+                  </button>
+                  <a href="https://wa.me/5513997274013?text=Olá!%20Gostei%20da%20sua%20Campanha%20de%20Produto%20e%20quero%20conversar." target="_blank" rel="noopener">
+                    <button type="button" class="ButtonModal">
+                      Quero algo assim
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 3 -->
+          <div
+            class="col-12 col-md-6 col-lg-3 card-item"
+            data-category="identidade"
+          >
+            <div class="card h-100">
+              <img
+                src="assets/img/designs/logosa.webp"
+                class="card-img-top img-fluid"
+                alt="Identidade Visual Educacional"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">Identidade Visual</h5>
+
+                <span class="card-category">Branding • Educação</span>
+
+                <p class="card-desc">
+                  Criação de marca para o setor educacional, unindo simbologia
+                  acadêmica a um traço moderno e minimalista.
+                </p>
+              </div>
+              <!-- Button trigger modal -->
+              <button
+                type="button"
+                class="ButtonCard"
+                data-bs-toggle="modal"
+                data-bs-target="#modal3"
+              >
+                Ver detalhes
+              </button>
+            </div>
+          </div>
+
+          <!-- Modal 3 -->
+          <div
+            class="modal fade"
+            id="modal3"
+            data-bs-backdrop="static"
+            data-bs-keyboard="false"
+            tabindex="-1"
+            aria-labelledby="modal3Label"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content body-modal">
+                <div class="modal-header">
+                  <div>
+                    <h6 class="card-title" id="modal3Label">Identidade Visual</h6>
+                    <p class="card-subititle">Branding • Educação</p>
+                  </div>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+
+                <div class="modal-body">
+                  <img class="modal-img-single" src="assets/img/designs/logosa.webp" alt="Identidade Visual Educacional">
+                  <p class="modal-text">
+                    Desenvolvimento de marca para um projeto do segmento
+                    educacional. O símbolo une o capelo de formatura à
+                    tipografia da marca, transmitindo conquista e aprendizado
+                    em um traço limpo e moderno.
+                  </p>
+                  <ul class="modal-features">
+                    <li><i class="fa-solid fa-check"></i> Conceito e simbologia</li>
+                    <li><i class="fa-solid fa-check"></i> Definição de paleta de cores</li>
+                    <li><i class="fa-solid fa-check"></i> Aplicações da marca</li>
+                  </ul>
+                </div>
+
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Fechar
+                  </button>
+                  <a href="https://wa.me/5513997274013?text=Olá!%20Gostei%20da%20sua%20Identidade%20Visual%20e%20quero%20conversar." target="_blank" rel="noopener">
+                    <button type="button" class="ButtonModal">
+                      Quero algo assim
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 4 -->
+          <div
+            class="col-12 col-md-6 col-lg-3 card-item"
+            data-category="campanhas"
+          >
+            <div class="card h-100">
+              <img
+                src="assets/img/designs/ds6.png"
+                class="card-img-top img-fluid"
+                alt="Campanha Esportiva de Clube"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">Campanha Esportiva</h5>
+
+                <span class="card-category">Social Media • Clube Esportivo</span>
+
+                <p class="card-desc">
+                  Arte comemorativa desenvolvida para celebrar um momento
+                  marcante de um clube esportivo nas redes sociais.
+                </p>
+              </div>
+              <!-- Button trigger modal -->
+              <button
+                type="button"
+                class="ButtonCard"
+                data-bs-toggle="modal"
+                data-bs-target="#modal4"
+              >
+                Ver detalhes
+              </button>
+            </div>
+          </div>
+
+          <!-- Modal 4 -->
+          <div
+            class="modal fade"
+            id="modal4"
+            data-bs-backdrop="static"
+            data-bs-keyboard="false"
+            tabindex="-1"
+            aria-labelledby="modal4Label"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content body-modal">
+                <div class="modal-header">
+                  <div>
+                    <h6 class="card-title" id="modal4Label">Campanha Esportiva</h6>
+                    <p class="card-subititle">Social Media • Clube Esportivo</p>
+                  </div>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+
+                <div class="modal-body">
+                  <img class="modal-img-single" src="assets/img/designs/ds6.png" alt="Campanha Esportiva de Clube">
+                  <p class="modal-text">
+                    Arte gráfica criada para celebrar uma conquista de um clube
+                    de futebol, com manipulação de imagem, elementos de
+                    estádio e composição dinâmica para transmitir emoção.
+                  </p>
+                  <ul class="modal-features">
+                    <li><i class="fa-solid fa-check"></i> Manipulação de imagem</li>
+                    <li><i class="fa-solid fa-check"></i> Composição e hierarquia visual</li>
+                    <li><i class="fa-solid fa-check"></i> Tipografia de destaque</li>
+                  </ul>
+                </div>
+
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Fechar
+                  </button>
+                  <a href="https://wa.me/5513997274013?text=Olá!%20Gostei%20da%20sua%20Campanha%20Esportiva%20e%20quero%20conversar." target="_blank" rel="noopener">
+                    <button type="button" class="ButtonModal">
+                      Quero algo assim
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 5 -->
+          <div
+            class="col-12 col-md-6 col-lg-3 card-item"
+            data-category="designpessoal"
+          >
+            <div class="card h-100">
+              <img
+                src="assets/img/designs/ds7.png"
+                class="card-img-top img-fluid"
+                alt="Projeto pessoal — homenagem esportiva"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">Projeto Pessoal</h5>
+
+                <span class="card-category">Design Pessoal • Homenagem</span>
+
+                <p class="card-desc">
+                  Pôster autoral criado por iniciativa própria, sem briefing de
+                  cliente, para exercitar composição e manipulação de imagem.
+                </p>
+              </div>
+              <!-- Button trigger modal -->
+              <button
+                type="button"
+                class="ButtonCard"
+                data-bs-toggle="modal"
+                data-bs-target="#modal5"
+              >
+                Ver detalhes
+              </button>
+            </div>
+          </div>
+
+          <!-- Modal 5 -->
+          <div
+            class="modal fade"
+            id="modal5"
+            data-bs-backdrop="static"
+            data-bs-keyboard="false"
+            tabindex="-1"
+            aria-labelledby="modal5Label"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content body-modal">
+                <div class="modal-header">
+                  <div>
+                    <h6 class="card-title" id="modal5Label">Projeto Pessoal</h6>
+                    <p class="card-subititle">Design Pessoal • Homenagem</p>
+                  </div>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+
+                <div class="modal-body">
+                  <img class="modal-img-single" src="assets/img/designs/ds7.png" alt="Projeto pessoal — homenagem esportiva">
+                  <p class="modal-text">
+                    Projeto autoral desenvolvido por gosto pessoal, unindo
+                    fotomontagem, tipografia de grande escala e um fundo
+                    ilustrado para compor um pôster de homenagem esportiva.
+                  </p>
+                  <ul class="modal-features">
+                    <li><i class="fa-solid fa-check"></i> Fotomontagem</li>
+                    <li><i class="fa-solid fa-check"></i> Tipografia de impacto</li>
+                    <li><i class="fa-solid fa-check"></i> Composição de fundo</li>
+                  </ul>
+                </div>
+
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Fechar
+                  </button>
+                  <a href="https://wa.me/5513997274013?text=Olá!%20Gostei%20do%20seu%20Projeto%20Pessoal%20e%20quero%20conversar." target="_blank" rel="noopener">
+                    <button type="button" class="ButtonModal">
+                      Quero algo assim
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 6 -->
+          <div
+            class="col-12 col-md-6 col-lg-3 card-item"
+            data-category="redes"
+          >
+            <div class="card h-100">
+              <img
+                src="assets/img/designs/design-tenis-nike.png"
+                class="card-img-top img-fluid"
+                alt="Post para redes sociais de produto"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">Post de Produto</h5>
+
+                <span class="card-category">Redes Sociais • E-commerce</span>
+
+                <p class="card-desc">
+                  Arte para divulgação de produto em redes sociais, com
+                  contraste forte e foco total na peça anunciada.
+                </p>
+              </div>
+              <!-- Button trigger modal -->
+              <button
+                type="button"
+                class="ButtonCard"
+                data-bs-toggle="modal"
+                data-bs-target="#modal6"
+              >
+                Ver detalhes
+              </button>
+            </div>
+          </div>
+
+          <!-- Modal 6 -->
+          <div
+            class="modal fade"
+            id="modal6"
+            data-bs-backdrop="static"
+            data-bs-keyboard="false"
+            tabindex="-1"
+            aria-labelledby="modal6Label"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content body-modal">
+                <div class="modal-header">
+                  <div>
+                    <h6 class="card-title" id="modal6Label">Post de Produto</h6>
+                    <p class="card-subititle">Redes Sociais • E-commerce</p>
+                  </div>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+
+                <div class="modal-body">
+                  <img class="modal-img-single" src="assets/img/designs/design-tenis-nike.png" alt="Post para redes sociais de produto">
+                  <p class="modal-text">
+                    Arte pensada para feed e stories, com fundo escuro em
+                    degradê para valorizar o produto e tipografia grande para
+                    reforçar o nome da linha anunciada.
+                  </p>
+                  <ul class="modal-features">
+                    <li><i class="fa-solid fa-check"></i> Recorte e tratamento de imagem</li>
+                    <li><i class="fa-solid fa-check"></i> Contraste e iluminação</li>
+                    <li><i class="fa-solid fa-check"></i> Layout para feed e stories</li>
+                  </ul>
+                </div>
+
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Fechar
+                  </button>
+                  <a href="https://wa.me/5513997274013?text=Olá!%20Gostei%20do%20seu%20Post%20de%20Produto%20e%20quero%20conversar." target="_blank" rel="noopener">
+                    <button type="button" class="ButtonModal">
+                      Quero algo assim
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <a
+      href="https://wa.me/5513997274013?text=Olá!%20Quero%20falar%20com%20você."
+      class="whatsapp-float"
+      target="_blank"
+      rel="noopener"
+      aria-label="Fale no WhatsApp"
+    >
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-top container">
+        <div class="footer-brand">
+          <img src="assets/img/logo.png" alt="Jaime Santos" class="footer-logo" />
+          <p>
+            Programador, Administrador, Designer & Editor. Transformando
+            ideias em experiências visuais e digitais.
+          </p>
+          <div class="footer-social">
+            <a href="https://github.com/vicentiv" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.instagram.com/devjaimesantos?utm_source=ig_web_button_share_sheet&amp;igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/jaimesantos18" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=devjaimesantos@gmail.com" target="_blank" rel="noopener" aria-label="E-mail"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://wa.me/5513997274013" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h4>Navegação</h4>
+          <ul>
+            <li><a href="index.html#hero2">Início</a></li>
+            <li><a href="design.html">Portfólio</a></li>
+            <li><a href="index.html#sobre">Sobre</a></li>
+            <li><a href="index.html#servicos">Serviços</a></li>
+            <li><a href="index.html#habilidades">Habilidades</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact" id="contato">
+          <h4>Contato</h4>
+          <ul>
+            <li><i class="fa-solid fa-envelope"></i> devjaimesantos@gmail.com</li>
+            <li><i class="fa-brands fa-whatsapp"></i> +55 13 99727-4013</li>
+            <li><i class="fa-solid fa-location-dot"></i> Itanhaém, SP - Brasil</li>
+          </ul>
+          <a href="https://wa.me/5513997274013?text=Olá!%20Vim%20pelo%20seu%20portfólio%20e%20quero%20conversar." target="_blank" rel="noopener">
+            <button class="NormalButton footer-cta">Fale comigo</button>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="anoAtual"></span> Jaime Santos. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/filters.js"></script>
+  </body>
+</html>

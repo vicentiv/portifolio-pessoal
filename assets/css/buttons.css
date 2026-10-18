@@ -1,0 +1,35 @@
+.NormalButton {
+  color: var(--btn-color);
+  background: var(--btn-bg);
+  border: var(--btn-border);
+  padding: var(--btn-padding);
+  border-radius: var(--btn-radius);
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.NormalButton:hover {
+  background: var(--btn-hover-bg);
+  color: var(--btn-hover-text);
+  box-shadow: var(--btn-hover-shadow);
+}
+
+.ButtonCard {
+   width: 100%;
+  max-width: 600px;
+  margin: auto;
+  display: block;
+  color: var(--btn-color);
+  background: var(--btn-bg);
+  border: var(--btn-border);
+  padding:8PX;
+  border-radius: var(--btn-radius);
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.ButtonCard:hover {
+  background: var(--btn-hover-bg);
+  color: var(--btn-hover-text);
+  box-shadow: var(--btn-hover-shadow);
+}
